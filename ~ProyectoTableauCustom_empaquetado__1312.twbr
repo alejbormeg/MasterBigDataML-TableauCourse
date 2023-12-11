@@ -1,0 +1,2150 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.23.1017.0948                               -->
+<workbook original-version='18.1' source-build='2023.3.0 (20233.23.1017.0948)' source-platform='win' version='18.1' xml:base='https://10ax.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <BasicButtonObject />
+    <BasicButtonObjectTextSupport />
+    <_.fcp.DashboardExportButton.true...DashboardExportButton />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='ProyectoTableauDiseoPropio' path='/t/tableaucourse2023/workbooks' revision='1.1' site='tableaucourse2023' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Valor prestamos mínimo' datatype='integer' name='[Parámetro 1]' param-domain-type='any' role='measure' type='quantitative' value='0'>
+        <calculation class='tableau' formula='0' />
+      </column>
+    </datasource>
+    <datasource inline='true' name='Clipboard_20231202T121746' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Clipboard_20231202T121746' name='Clipboard_20231202T121746leaf'>
+            <connection class='textscan' directory='Data/Fuentes de datos' filename='Clipboard_20231202T121746.txt' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='Clipboard_20231202T121746leaf' name='Clipboard_20231202T121746#txt' table='[Clipboard_20231202T121746#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_ES'>
+            <column datatype='string' name='Leyenda' ordinal='0' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='Clipboard_20231202T121746leaf' name='Clipboard_20231202T121746#txt' table='[Clipboard_20231202T121746#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_ES'>
+            <column datatype='string' name='Leyenda' ordinal='0' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Clipboard_20231202T121746#txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_ES&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Leyenda</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Leyenda]</local-name>
+            <parent-name>[Clipboard_20231202T121746#txt]</parent-name>
+            <remote-alias>Leyenda</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Clipboard_20231202T121746]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Leyenda]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Clipboard_20231202T121746' datatype='table' name='[__tableau_internal_object_id__].[Clipboard_20231202T121746]' role='measure' type='quantitative' />
+      <column-instance column='[Leyenda]' derivation='None' name='[none:Leyenda:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Leyenda:nk]' type='palette'>
+            <map to='#366bba'>
+              <bucket>&quot;Operaciones por debajo del promedio&quot;</bucket>
+            </map>
+            <map to='#c8c8c8'>
+              <bucket>&quot;Operaciones por encima del promedio&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Clipboard_20231202T121746' id='Clipboard_20231202T121746'>
+            <properties context=''>
+              <relation connection='Clipboard_20231202T121746leaf' name='Clipboard_20231202T121746#txt' table='[Clipboard_20231202T121746#txt]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_ES'>
+                  <column datatype='string' name='Leyenda' ordinal='0' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Operaciones financiación compras 2015 Europa' inline='true' name='federated.0xpbq510k7s5ol10msf4z1wkj6si' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Operaciones_financiación_compras_2015' name='excel-direct.12vb9ah0bnw08z153oaqq04uynzi'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='C:/Users/pablo/OneDrive/Documentos/GitHub/MasterBigData-TableauCourse/Operaciones_financiación_compras_2015.xlsx' interpretationMode='1' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation join='right' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[Orders].[merchant_id]' />
+              <expression op='[merchant].[merchant_id]' />
+            </expression>
+          </clause>
+          <relation connection='excel-direct.12vb9ah0bnw08z153oaqq04uynzi' name='Orders' table='[Orders$]' type='table'>
+            <columns gridOrigin='A1:H874:no:A1:H874:1' lost='0' outcome='1' processed='2702'>
+              <column datatype='string' name='order_id' ordinal='0' />
+              <column datatype='datetime' name='created_at' ordinal='1' />
+              <column datatype='string' name='status' ordinal='2' />
+              <column datatype='real' name='amount' ordinal='3' />
+              <column datatype='datetime' name='created_at 1' ordinal='4' />
+              <column datatype='datetime' name='refunded_at' ordinal='5' />
+              <column datatype='string' name='merchant_id' ordinal='6' />
+              <column datatype='string' name='country' ordinal='7' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.12vb9ah0bnw08z153oaqq04uynzi' name='merchant' table='[merchant$]' type='table'>
+            <columns gridOrigin='A1:B78:no:A1:B78:0' outcome='2'>
+              <column datatype='string' name='merchant_id' ordinal='0' />
+              <column datatype='string' name='name' ordinal='1' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation join='right' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[Orders].[merchant_id]' />
+                <expression op='[merchant].[merchant_id]' />
+              </expression>
+            </clause>
+            <relation connection='excel-direct.12vb9ah0bnw08z153oaqq04uynzi' name='Orders' table='[Orders$]' type='table'>
+              <columns gridOrigin='A1:H874:no:A1:H874:1' lost='0' outcome='1' processed='2702'>
+                <column datatype='string' name='order_id' ordinal='0' />
+                <column datatype='datetime' name='created_at' ordinal='1' />
+                <column datatype='string' name='status' ordinal='2' />
+                <column datatype='real' name='amount' ordinal='3' />
+                <column datatype='datetime' name='created_at 1' ordinal='4' />
+                <column datatype='datetime' name='refunded_at' ordinal='5' />
+                <column datatype='string' name='merchant_id' ordinal='6' />
+                <column datatype='string' name='country' ordinal='7' />
+              </columns>
+            </relation>
+            <relation connection='excel-direct.12vb9ah0bnw08z153oaqq04uynzi' name='merchant' table='[merchant$]' type='table'>
+              <columns gridOrigin='A1:B78:no:A1:B78:0' outcome='2'>
+                <column datatype='string' name='merchant_id' ordinal='0' />
+                <column datatype='string' name='name' ordinal='1' />
+              </columns>
+            </relation>
+          </relation>
+          <relation connection='excel-direct.12vb9ah0bnw08z153oaqq04uynzi' name='refunds' table='[refunds$]' type='table'>
+            <columns gridOrigin='A1:C20:no:A1:C20:1' lost='0' outcome='1' processed='38'>
+              <column datatype='string' name='order_id' ordinal='0' />
+              <column datatype='datetime' name='refunded_at' ordinal='1' />
+              <column datatype='real' name='amount' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[amount (refunds)]' value='[refunds].[amount]' />
+          <map key='[amount]' value='[Orders].[amount]' />
+          <map key='[country]' value='[Orders].[country]' />
+          <map key='[created_at 1]' value='[Orders].[created_at 1]' />
+          <map key='[created_at]' value='[Orders].[created_at]' />
+          <map key='[merchant_id (merchant)]' value='[merchant].[merchant_id]' />
+          <map key='[merchant_id]' value='[Orders].[merchant_id]' />
+          <map key='[name]' value='[merchant].[name]' />
+          <map key='[order_id (refunds)]' value='[refunds].[order_id]' />
+          <map key='[order_id]' value='[Orders].[order_id]' />
+          <map key='[refunded_at (refunds)]' value='[refunds].[refunded_at]' />
+          <map key='[refunded_at]' value='[Orders].[refunded_at]' />
+          <map key='[status]' value='[Orders].[status]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H874:no:A1:H874:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>2702</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[merchant]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B78:no:A1:B78:0&quot;</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[refunds]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C20:no:A1:C20:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>38</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[order_id]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>order_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_7D82704761924D81A7F3E62E9C7531FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[created_at]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>created_at</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_7D82704761924D81A7F3E62E9C7531FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[status]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>status</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_7D82704761924D81A7F3E62E9C7531FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[amount]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>amount</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_7D82704761924D81A7F3E62E9C7531FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_at 1</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[created_at 1]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>created_at 1</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_7D82704761924D81A7F3E62E9C7531FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>refunded_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[refunded_at]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>refunded_at</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_7D82704761924D81A7F3E62E9C7531FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>merchant_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[merchant_id]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>merchant_id</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_7D82704761924D81A7F3E62E9C7531FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[Orders]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_7D82704761924D81A7F3E62E9C7531FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>merchant_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[merchant_id (merchant)]</local-name>
+            <parent-name>[merchant]</parent-name>
+            <remote-alias>merchant_id</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_7D82704761924D81A7F3E62E9C7531FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[merchant]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_7D82704761924D81A7F3E62E9C7531FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[order_id (refunds)]</local-name>
+            <parent-name>[refunds]</parent-name>
+            <remote-alias>order_id</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[refunds_D8E0F92AEFA14C188FEFF7B680859A7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>refunded_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[refunded_at (refunds)]</local-name>
+            <parent-name>[refunds]</parent-name>
+            <remote-alias>refunded_at</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[refunds_D8E0F92AEFA14C188FEFF7B680859A7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[amount (refunds)]</local-name>
+            <parent-name>[refunds]</parent-name>
+            <remote-alias>amount</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[refunds_D8E0F92AEFA14C188FEFF7B680859A7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Promedio' datatype='real' name='[Calculation_1010213718832005121]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([amount])' />
+      </column>
+      <column caption='Total comercios' datatype='integer' name='[Calculation_1010213718835675138]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([name])' />
+      </column>
+      <column caption='Máximo' datatype='real' name='[Calculation_1010213718836334595]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MAX([amount])' />
+      </column>
+      <column caption='Mínimo' datatype='real' name='[Calculation_1010213718839357444]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MIN([amount])' />
+      </column>
+      <column caption='Valor acumulado' datatype='real' name='[Calculation_1010213718839742469]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RUNNING_SUM(SUM([amount]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Promedio total' datatype='real' name='[Calculation_1010213718847864839]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED : [Calculation_1010213718832005121]}' />
+      </column>
+      <column caption='Total devoluciones' datatype='integer' name='[Calculation_1010213718849757192]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([order_id (refunds)])' />
+      </column>
+      <column caption='Límite mínimo préstamo' datatype='boolean' name='[Calculation_1010213718855258121]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[amount]&gt;[Parameters].[Parámetro 1]' />
+      </column>
+      <column caption='DesviacionLegend' datatype='string' name='[Calculation_1189513280318312449]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&apos;Operaciones por debajo del promedio, Operaciones por encima del promedio&apos;' />
+      </column>
+      <column caption='Reset Filters' datatype='string' name='[Calculation_714946469347840002]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&apos;Reset Filters&apos;' />
+      </column>
+      <column caption='Desviación' datatype='real' name='[Calculation_935904325333782528]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([Calculation_1010213718847864839]) - ([Calculation_1010213718832005121])' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='OrdersMerchants' datatype='table' name='[__tableau_internal_object_id__].[Orders_7D82704761924D81A7F3E62E9C7531FC]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='refunds' datatype='table' name='[__tableau_internal_object_id__].[refunds_D8E0F92AEFA14C188FEFF7B680859A7E]' role='measure' type='quantitative' />
+      <column caption='Amount (Refunds)' datatype='real' name='[amount (refunds)]' role='measure' type='quantitative' />
+      <column caption='Amount' datatype='real' name='[amount]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Created At 1' datatype='datetime' name='[created_at 1]' role='dimension' type='ordinal' />
+      <column caption='Created At' datatype='datetime' default-format='*d&quot; de &quot;mmmm&quot; de &quot;yyyy' name='[created_at]' role='dimension' type='ordinal' />
+      <column caption='Merchant Id (Merchant)' datatype='string' name='[merchant_id (merchant)]' role='dimension' type='nominal' />
+      <column caption='Merchant Id' datatype='string' name='[merchant_id]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Order Id (Refunds)' datatype='string' name='[order_id (refunds)]' role='dimension' type='nominal' />
+      <column caption='Order Id' datatype='string' name='[order_id]' role='dimension' type='nominal' />
+      <column caption='Refunded At (Refunds)' datatype='datetime' name='[refunded_at (refunds)]' role='dimension' type='ordinal' />
+      <column caption='Refunded At' datatype='datetime' name='[refunded_at]' role='dimension' type='ordinal' />
+      <column caption='Status' datatype='string' name='[status]' role='dimension' type='nominal' />
+      <column-instance column='[created_at]' derivation='Day' name='[dy:created_at:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+      <group caption='Acción (Country)' hidden='true' name='[Action (Country)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[country]' />
+        </groupfilter>
+      </group>
+      <group caption='Acción (Country,Created At)' hidden='true' name='[Action (Country,Created At)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[country]' />
+          <groupfilter function='level-members' level='[created_at]' />
+        </groupfilter>
+      </group>
+      <group caption='Acción (Country,DÍA(Created At))' hidden='true' name='[Action (Country,DAY(Created At))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[country]' />
+          <groupfilter function='level-members' level='[dy:created_at:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Acción (Límite mínimo préstamo,Country,Created At)' hidden='true' name='[Action (Límite mínimo préstamo,Country,Created At)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_1010213718855258121]' />
+          <groupfilter function='level-members' level='[country]' />
+          <groupfilter function='level-members' level='[created_at]' />
+        </groupfilter>
+      </group>
+      <group caption='Acción (Reset Filters)' hidden='true' name='[Action (Reset Filters)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_714946469331058688]' />
+        </groupfilter>
+      </group>
+      <group caption='Acción (Reset Filters,Reset Filters (grupo))' hidden='true' name='[Action (Reset Filters,Reset Filters (grupo))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_714946469331058688]' />
+          <groupfilter function='level-members' level='[Reset Filters (grupo)]' />
+        </groupfilter>
+      </group>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='Campos Calculados' role='dimensions'>
+        <folder-item name='[Calculation_1010213718855258121]' type='field' />
+        <folder-item name='[Calculation_714946469347840002]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='Campos Calculados' role='measures'>
+        <folder-item name='[Calculation_1010213718832005121]' type='field' />
+        <folder-item name='[Calculation_1010213718835675138]' type='field' />
+        <folder-item name='[Calculation_1010213718836334595]' type='field' />
+        <folder-item name='[Calculation_1010213718839357444]' type='field' />
+        <folder-item name='[Calculation_1010213718839742469]' type='field' />
+        <folder-item name='[Calculation_1010213718847864839]' type='field' />
+        <folder-item name='[Calculation_1010213718849757192]' type='field' />
+        <folder-item name='[Calculation_935904325333782528]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='Fuente de Datos' role='dimensions'>
+        <folder-item name='[country]' type='field' />
+        <folder-item name='[created_at 1]' type='field' />
+        <folder-item name='[created_at]' type='field' />
+        <folder-item name='[merchant_id (merchant)]' type='field' />
+        <folder-item name='[merchant_id]' type='field' />
+        <folder-item name='[name]' type='field' />
+        <folder-item name='[order_id (refunds)]' type='field' />
+        <folder-item name='[order_id]' type='field' />
+        <folder-item name='[refunded_at (refunds)]' type='field' />
+        <folder-item name='[refunded_at]' type='field' />
+        <folder-item name='[status]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='Fuente de Datos' role='measures'>
+        <folder-item name='[amount (refunds)]' type='field' />
+        <folder-item name='[amount]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.true...folders-common>
+        <folder name='Campos Calculados'>
+          <folder-item name='[Calculation_1010213718832005121]' type='field' />
+          <folder-item name='[Calculation_1010213718835675138]' type='field' />
+          <folder-item name='[Calculation_1010213718836334595]' type='field' />
+          <folder-item name='[Calculation_1010213718839357444]' type='field' />
+          <folder-item name='[Calculation_1010213718839742469]' type='field' />
+          <folder-item name='[Calculation_1010213718847864839]' type='field' />
+          <folder-item name='[Calculation_1010213718849757192]' type='field' />
+          <folder-item name='[Calculation_1010213718855258121]' type='field' />
+          <folder-item name='[Calculation_714946469347840002]' type='field' />
+          <folder-item name='[Calculation_935904325333782528]' type='field' />
+        </folder>
+        <folder name='Fuente de Datos'>
+          <folder-item name='[amount (refunds)]' type='field' />
+          <folder-item name='[amount]' type='field' />
+          <folder-item name='[country]' type='field' />
+          <folder-item name='[created_at 1]' type='field' />
+          <folder-item name='[created_at]' type='field' />
+          <folder-item name='[merchant_id (merchant)]' type='field' />
+          <folder-item name='[merchant_id]' type='field' />
+          <folder-item name='[name]' type='field' />
+          <folder-item name='[order_id (refunds)]' type='field' />
+          <folder-item name='[order_id]' type='field' />
+          <folder-item name='[refunded_at (refunds)]' type='field' />
+          <folder-item name='[refunded_at]' type='field' />
+          <folder-item name='[status]' type='field' />
+        </folder>
+      </_.fcp.SchemaViewerObjectModel.true...folders-common>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='es_ES' class='hyper' dbname='Data/MasterBigData-TableauCourse/Operaciones financiación compras 2015 Europa.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='11/28/2023 05:11:09 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Orders_7D82704761924D81A7F3E62E9C7531FC' table='[Extract].[Orders_7D82704761924D81A7F3E62E9C7531FC]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='Orders_7D82704761924D81A7F3E62E9C7531FC' table='[Extract].[Orders_7D82704761924D81A7F3E62E9C7531FC]' type='table' />
+            <relation name='refunds_D8E0F92AEFA14C188FEFF7B680859A7E' table='[Extract].[refunds_D8E0F92AEFA14C188FEFF7B680859A7E]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <cols>
+            <map key='[amount (refunds)]' value='[refunds_D8E0F92AEFA14C188FEFF7B680859A7E].[amount]' />
+            <map key='[amount]' value='[Orders_7D82704761924D81A7F3E62E9C7531FC].[amount]' />
+            <map key='[country]' value='[Orders_7D82704761924D81A7F3E62E9C7531FC].[country]' />
+            <map key='[created_at 1]' value='[Orders_7D82704761924D81A7F3E62E9C7531FC].[created_at 1]' />
+            <map key='[created_at]' value='[Orders_7D82704761924D81A7F3E62E9C7531FC].[created_at]' />
+            <map key='[merchant_id (merchant)]' value='[Orders_7D82704761924D81A7F3E62E9C7531FC].[merchant_id]' />
+            <map key='[merchant_id]' value='[Orders_7D82704761924D81A7F3E62E9C7531FC].[merchant_id1]' />
+            <map key='[name]' value='[Orders_7D82704761924D81A7F3E62E9C7531FC].[name]' />
+            <map key='[order_id (refunds)]' value='[refunds_D8E0F92AEFA14C188FEFF7B680859A7E].[order_id]' />
+            <map key='[order_id]' value='[Orders_7D82704761924D81A7F3E62E9C7531FC].[order_id]' />
+            <map key='[refunded_at (refunds)]' value='[refunds_D8E0F92AEFA14C188FEFF7B680859A7E].[refunded_at]' />
+            <map key='[refunded_at]' value='[Orders_7D82704761924D81A7F3E62E9C7531FC].[refunded_at]' />
+            <map key='[status]' value='[Orders_7D82704761924D81A7F3E62E9C7531FC].[status]' />
+          </cols>
+          <refresh>
+            <refresh-event add-from-file-path='Operaciones financiación compras 2015 Europa' increment-value='%null%' refresh-type='create' rows-inserted='932' timestamp-start='2023-11-28 17:11:07.371' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>order_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[order_id]</local-name>
+              <parent-name>[Orders_7D82704761924D81A7F3E62E9C7531FC]</parent-name>
+              <remote-alias>order_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>874</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_7D82704761924D81A7F3E62E9C7531FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>created_at</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[created_at]</local-name>
+              <parent-name>[Orders_7D82704761924D81A7F3E62E9C7531FC]</parent-name>
+              <remote-alias>created_at</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Orders</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>874</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_7D82704761924D81A7F3E62E9C7531FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[status]</local-name>
+              <parent-name>[Orders_7D82704761924D81A7F3E62E9C7531FC]</parent-name>
+              <remote-alias>status</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_7D82704761924D81A7F3E62E9C7531FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[amount]</local-name>
+              <parent-name>[Orders_7D82704761924D81A7F3E62E9C7531FC]</parent-name>
+              <remote-alias>amount</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Orders</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>695</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_7D82704761924D81A7F3E62E9C7531FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>created_at 1</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[created_at 1]</local-name>
+              <parent-name>[Orders_7D82704761924D81A7F3E62E9C7531FC]</parent-name>
+              <remote-alias>created_at 1</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Orders</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>874</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_7D82704761924D81A7F3E62E9C7531FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>refunded_at</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[refunded_at]</local-name>
+              <parent-name>[Orders_7D82704761924D81A7F3E62E9C7531FC]</parent-name>
+              <remote-alias>refunded_at</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Orders</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>84</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_7D82704761924D81A7F3E62E9C7531FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>merchant_id1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[merchant_id]</local-name>
+              <parent-name>[Orders_7D82704761924D81A7F3E62E9C7531FC]</parent-name>
+              <remote-alias>merchant_id1</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_7D82704761924D81A7F3E62E9C7531FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country]</local-name>
+              <parent-name>[Orders_7D82704761924D81A7F3E62E9C7531FC]</parent-name>
+              <remote-alias>country</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Orders</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_7D82704761924D81A7F3E62E9C7531FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>merchant_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[merchant_id (merchant)]</local-name>
+              <parent-name>[Orders_7D82704761924D81A7F3E62E9C7531FC]</parent-name>
+              <remote-alias>merchant_id</remote-alias>
+              <ordinal>8</ordinal>
+              <family>merchant</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>77</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_7D82704761924D81A7F3E62E9C7531FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[name]</local-name>
+              <parent-name>[Orders_7D82704761924D81A7F3E62E9C7531FC]</parent-name>
+              <remote-alias>name</remote-alias>
+              <ordinal>9</ordinal>
+              <family>merchant</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>77</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Orders_7D82704761924D81A7F3E62E9C7531FC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[order_id (refunds)]</local-name>
+              <parent-name>[refunds_D8E0F92AEFA14C188FEFF7B680859A7E]</parent-name>
+              <remote-alias>order_id</remote-alias>
+              <ordinal>10</ordinal>
+              <family>refunds</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LES_RES_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[refunds_D8E0F92AEFA14C188FEFF7B680859A7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>refunded_at</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[refunded_at (refunds)]</local-name>
+              <parent-name>[refunds_D8E0F92AEFA14C188FEFF7B680859A7E]</parent-name>
+              <remote-alias>refunded_at</remote-alias>
+              <ordinal>11</ordinal>
+              <family>refunds</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[refunds_D8E0F92AEFA14C188FEFF7B680859A7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[amount (refunds)]</local-name>
+              <parent-name>[refunds_D8E0F92AEFA14C188FEFF7B680859A7E]</parent-name>
+              <remote-alias>amount</remote-alias>
+              <ordinal>12</ordinal>
+              <family>refunds</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[refunds_D8E0F92AEFA14C188FEFF7B680859A7E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='false' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:country:nk]' palette='blue_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;Portugal&quot;</bucket>
+            </map>
+            <map to='#42709e'>
+              <bucket>&quot;Italia&quot;</bucket>
+            </map>
+            <map to='#598ab6'>
+              <bucket>&quot;Francia&quot;</bucket>
+            </map>
+            <map to='#75a6cc'>
+              <bucket>&quot;España&quot;</bucket>
+            </map>
+            <map to='#94c2e1'>
+              <bucket>&quot;Belgica&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;Alemania&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Valor prestamos mínimo' datatype='integer' name='[Parámetro 1]' param-domain-type='any' role='measure' type='quantitative' value='0'>
+          <calculation class='tableau' formula='0' />
+        </column>
+      </datasource-dependencies>
+      <filter class='categorical' column='[country]' filter-group='2'>
+        <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+          <groupfilter function='level-members' level='[country]' />
+          <groupfilter function='union'>
+            <groupfilter function='member' level='[country]' member='%null%' />
+            <groupfilter function='member' level='[country]' member='&quot;Marruecos&quot;' />
+          </groupfilter>
+        </groupfilter>
+      </filter>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='OrdersMerchants' id='Orders_7D82704761924D81A7F3E62E9C7531FC'>
+            <properties context=''>
+              <relation join='right' type='join'>
+                <clause type='join'>
+                  <expression op='='>
+                    <expression op='[Orders].[merchant_id]' />
+                    <expression op='[merchant].[merchant_id]' />
+                  </expression>
+                </clause>
+                <relation connection='excel-direct.12vb9ah0bnw08z153oaqq04uynzi' name='Orders' table='[Orders$]' type='table'>
+                  <columns gridOrigin='A1:H874:no:A1:H874:1' lost='0' outcome='1' processed='2702'>
+                    <column datatype='string' name='order_id' ordinal='0' />
+                    <column datatype='datetime' name='created_at' ordinal='1' />
+                    <column datatype='string' name='status' ordinal='2' />
+                    <column datatype='real' name='amount' ordinal='3' />
+                    <column datatype='datetime' name='created_at 1' ordinal='4' />
+                    <column datatype='datetime' name='refunded_at' ordinal='5' />
+                    <column datatype='string' name='merchant_id' ordinal='6' />
+                    <column datatype='string' name='country' ordinal='7' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.12vb9ah0bnw08z153oaqq04uynzi' name='merchant' table='[merchant$]' type='table'>
+                  <columns gridOrigin='A1:B78:no:A1:B78:0' outcome='2'>
+                    <column datatype='string' name='merchant_id' ordinal='0' />
+                    <column datatype='string' name='name' ordinal='1' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Orders_7D82704761924D81A7F3E62E9C7531FC' table='[Extract].[Orders_7D82704761924D81A7F3E62E9C7531FC]' type='table' />
+            </properties>
+          </object>
+          <object caption='refunds' id='refunds_D8E0F92AEFA14C188FEFF7B680859A7E'>
+            <properties context=''>
+              <relation connection='excel-direct.12vb9ah0bnw08z153oaqq04uynzi' name='refunds' table='[refunds$]' type='table'>
+                <columns gridOrigin='A1:C20:no:A1:C20:1' lost='0' outcome='1' processed='38'>
+                  <column datatype='string' name='order_id' ordinal='0' />
+                  <column datatype='datetime' name='refunded_at' ordinal='1' />
+                  <column datatype='real' name='amount' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='refunds_D8E0F92AEFA14C188FEFF7B680859A7E' table='[Extract].[refunds_D8E0F92AEFA14C188FEFF7B680859A7E]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[order_id]' />
+              <expression op='[order_id (refunds)]' />
+            </expression>
+            <first-end-point object-id='Orders_7D82704761924D81A7F3E62E9C7531FC' />
+            <second-end-point object-id='refunds_D8E0F92AEFA14C188FEFF7B680859A7E' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Resaltar1' name='[Action1_5869AC6EAA564F8FA1A184D615D1C073]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='AnalisisVentasCustom' type='sheet'>
+        <exclude-sheet name='Reset' />
+        <exclude-sheet name='TablaKPIs' />
+      </source>
+      <command command='tsc:brush'>
+        <param name='exclude' value='Reset,TablaKPIs' />
+        <param name='field-captions' value='Country' />
+        <param name='target' value='AnalisisVentasCustom' />
+      </command>
+    </action>
+    <action caption='Filtrar1' name='[Action2_A6020020F50844CCA60572CD6F69F057]'>
+      <activation type='on-select' />
+      <source dashboard='AnalisisVentasCustom' type='sheet' worksheet='Reset' />
+      <link caption='Filtrar1' delimiter=',' escape='\' expression='tsl:AnalisisVentasCustom?%5Bfederated.0xpbq510k7s5ol10msf4z1wkj6si%5D.%5Bcountry%5D~s0=&lt;[federated.0xpbq510k7s5ol10msf4z1wkj6si].[country]~na&gt;&amp;%5Bfederated.0xpbq510k7s5ol10msf4z1wkj6si%5D.%5Bcreated_at%5D~s0=&lt;[federated.0xpbq510k7s5ol10msf4z1wkj6si].[created_at]~na&gt;' include-null='true' multi-select='true' url-escape='true' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Reset' />
+        <param name='target' value='AnalisisVentasCustom' />
+      </command>
+    </action>
+    <datasources>
+      <datasource caption='Operaciones financiación compras 2015 Europa' name='federated.0xpbq510k7s5ol10msf4z1wkj6si' />
+    </datasources>
+    <datasource-dependencies datasource='federated.0xpbq510k7s5ol10msf4z1wkj6si'>
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Created At' datatype='datetime' default-format='*d&quot; de &quot;mmmm&quot; de &quot;yyyy' name='[created_at]' role='dimension' type='ordinal' />
+    </datasource-dependencies>
+  </actions>
+  <worksheets>
+    <worksheet name='CamposCalculados'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Operaciones financiación compras 2015 Europa' name='federated.0xpbq510k7s5ol10msf4z1wkj6si' />
+            <datasource caption='Parámetros' name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Valor prestamos mínimo' datatype='integer' name='[Parámetro 1]' param-domain-type='any' role='measure' type='quantitative' value='0'>
+              <calculation class='tableau' formula='0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0xpbq510k7s5ol10msf4z1wkj6si'>
+            <column caption='Promedio' datatype='real' name='[Calculation_1010213718832005121]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([amount])' />
+            </column>
+            <column caption='Total comercios' datatype='integer' name='[Calculation_1010213718835675138]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([name])' />
+            </column>
+            <column caption='Máximo' datatype='real' name='[Calculation_1010213718836334595]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='MAX([amount])' />
+            </column>
+            <column caption='Mínimo' datatype='real' name='[Calculation_1010213718839357444]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='MIN([amount])' />
+            </column>
+            <column caption='Valor acumulado' datatype='real' name='[Calculation_1010213718839742469]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RUNNING_SUM(SUM([amount]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Promedio total' datatype='real' name='[Calculation_1010213718847864839]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED : [Calculation_1010213718832005121]}' />
+            </column>
+            <column caption='Total devoluciones' datatype='integer' name='[Calculation_1010213718849757192]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([order_id (refunds)])' />
+            </column>
+            <column caption='Límite mínimo préstamo' datatype='boolean' name='[Calculation_1010213718855258121]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[amount]&gt;[Parameters].[Parámetro 1]' />
+            </column>
+            <column caption='Amount' datatype='real' name='[amount]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Created At' datatype='datetime' default-format='*d&quot; de &quot;mmmm&quot; de &quot;yyyy' name='[created_at]' role='dimension' type='ordinal' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1010213718855258121]' derivation='None' name='[none:Calculation_1010213718855258121:nk]' pivot='key' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[created_at]' derivation='None' name='[none:created_at:qk]' pivot='key' type='quantitative' />
+            <column caption='Order Id (Refunds)' datatype='string' name='[order_id (refunds)]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1010213718847864839]' derivation='Sum' name='[sum:Calculation_1010213718847864839:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1010213718832005121]' derivation='User' name='[usr:Calculation_1010213718832005121:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1010213718835675138]' derivation='User' name='[usr:Calculation_1010213718835675138:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1010213718836334595]' derivation='User' name='[usr:Calculation_1010213718836334595:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1010213718839357444]' derivation='User' name='[usr:Calculation_1010213718839357444:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1010213718839742469]' derivation='User' name='[usr:Calculation_1010213718839742469:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+            <column-instance column='[Calculation_1010213718849757192]' derivation='User' name='[usr:Calculation_1010213718849757192:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:Calculation_1010213718855258121:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Calculation_1010213718855258121:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:country:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:created_at:qk]' filter-group='5' included-values='all' />
+          <slices>
+            <column>[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:Calculation_1010213718855258121:nk]</column>
+            <column>[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:country:nk]</column>
+            <column>[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:created_at:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <lod column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:Calculation_1010213718855258121:nk]' />
+              <lod column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[usr:Calculation_1010213718836334595:qk]' />
+              <lod column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[usr:Calculation_1010213718839357444:qk]' />
+              <lod column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[usr:Calculation_1010213718832005121:qk]' />
+              <lod column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[sum:Calculation_1010213718847864839:qk]' />
+              <lod column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[usr:Calculation_1010213718835675138:qk]' />
+              <lod column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[usr:Calculation_1010213718849757192:qk]' />
+              <lod column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[usr:Calculation_1010213718839742469:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DD8909F2-3A96-4E9A-AD2C-09B4C4BD86B7}' />
+    </worksheet>
+    <worksheet name='Desviación'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Operaciones financiación compras 2015 Europa' name='federated.0xpbq510k7s5ol10msf4z1wkj6si' />
+            <datasource caption='Parámetros' name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Valor prestamos mínimo' datatype='integer' name='[Parámetro 1]' param-domain-type='any' role='measure' type='quantitative' value='0'>
+              <calculation class='tableau' formula='0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0xpbq510k7s5ol10msf4z1wkj6si'>
+            <column caption='Promedio' datatype='real' name='[Calculation_1010213718832005121]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([amount])' />
+            </column>
+            <column caption='Promedio total' datatype='real' name='[Calculation_1010213718847864839]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED : [Calculation_1010213718832005121]}' />
+            </column>
+            <column caption='Límite mínimo préstamo' datatype='boolean' name='[Calculation_1010213718855258121]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[amount]&gt;[Parameters].[Parámetro 1]' />
+            </column>
+            <column caption='Desviación' datatype='real' name='[Calculation_935904325333782528]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([Calculation_1010213718847864839]) - ([Calculation_1010213718832005121])' />
+            </column>
+            <column caption='Amount' datatype='real' name='[amount]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Created At' datatype='datetime' default-format='*d&quot; de &quot;mmmm&quot; de &quot;yyyy' name='[created_at]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1010213718855258121]' derivation='None' name='[none:Calculation_1010213718855258121:nk]' pivot='key' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[created_at]' derivation='None' name='[none:created_at:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[order_id]' derivation='None' name='[none:order_id:nk]' pivot='key' type='nominal' />
+            <column caption='Order Id' datatype='string' name='[order_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_935904325333782528]' derivation='User' name='[usr:Calculation_935904325333782528:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:Calculation_1010213718855258121:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Calculation_1010213718855258121:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:country:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:created_at:qk]' filter-group='5' included-values='all' />
+          <computed-sort column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:order_id:nk]' direction='ASC' using='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[usr:Calculation_935904325333782528:qk]' />
+          <slices>
+            <column>[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:Calculation_1010213718855258121:nk]</column>
+            <column>[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:country:nk]</column>
+            <column>[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:created_at:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='167' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' center='0.0' field='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[usr:Calculation_935904325333782528:qk]' num-steps='2' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#ffffff</color>
+                <color>#fbfbfb</color>
+                <color>#f8f8f8</color>
+                <color>#f4f4f4</color>
+                <color>#f1f1f1</color>
+                <color>#ededed</color>
+                <color>#eaeaea</color>
+                <color>#e6e6e6</color>
+                <color>#e3e3e3</color>
+                <color>#dfdfdf</color>
+                <color>#dcdcdc</color>
+                <color>#d9d9d9</color>
+                <color>#c8cdd6</color>
+                <color>#b8c3d3</color>
+                <color>#a8b8d0</color>
+                <color>#98adcd</color>
+                <color>#89a3ca</color>
+                <color>#7a99c8</color>
+                <color>#6c8fc5</color>
+                <color>#5e86c2</color>
+                <color>#507dbf</color>
+                <color>#4273bc</color>
+                <color>#366bba</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[usr:Calculation_935904325333782528:qk]' />
+              <lod column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:order_id:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.58171272277832031' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{114091AD-8797-4193-A3FF-6908C8402A24}' />
+    </worksheet>
+    <worksheet name='Leyenda Desviacion'>
+      <table>
+        <view>
+          <datasources>
+            <datasource name='Clipboard_20231202T121746' />
+          </datasources>
+          <datasource-dependencies datasource='Clipboard_20231202T121746'>
+            <column datatype='string' name='[Leyenda]' role='dimension' type='nominal' />
+            <column-instance column='[Leyenda]' derivation='None' name='[none:Leyenda:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[Clipboard_20231202T121746].[none:Leyenda:nk]' value='284' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='color' value='#75a1c7' />
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='field-labels-spanner'>
+            <format attr='color' scope='rows' value='#000000' />
+            <format attr='background-color' scope='rows' value='#ddebf0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[Clipboard_20231202T121746].[none:Leyenda:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='shape' value=':filled/circle' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[Clipboard_20231202T121746].[none:Leyenda:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{96D7D573-36F0-4BB5-A9C6-50B19C0C3553}' />
+    </worksheet>
+    <worksheet name='Mapa'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Century Gothic'>País seleccionado</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Operaciones financiación compras 2015 Europa' name='federated.0xpbq510k7s5ol10msf4z1wkj6si' />
+            <datasource caption='Parámetros' name='Parameters' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Valor prestamos mínimo' datatype='integer' name='[Parámetro 1]' param-domain-type='any' role='measure' type='quantitative' value='0'>
+              <calculation class='tableau' formula='0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0xpbq510k7s5ol10msf4z1wkj6si'>
+            <column caption='Promedio' datatype='real' name='[Calculation_1010213718832005121]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([amount])' />
+            </column>
+            <column caption='Límite mínimo préstamo' datatype='boolean' name='[Calculation_1010213718855258121]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[amount]&gt;[Parameters].[Parámetro 1]' />
+            </column>
+            <column caption='Amount' datatype='real' name='[amount]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Created At' datatype='datetime' default-format='*d&quot; de &quot;mmmm&quot; de &quot;yyyy' name='[created_at]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1010213718855258121]' derivation='None' name='[none:Calculation_1010213718855258121:nk]' pivot='key' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[created_at]' derivation='None' name='[none:created_at:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1010213718832005121]' derivation='User' name='[usr:Calculation_1010213718832005121:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:Calculation_1010213718855258121:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Calculation_1010213718855258121:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:country:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:created_at:qk]' filter-group='5' included-values='all' />
+          <slices>
+            <column>[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:Calculation_1010213718855258121:nk]</column>
+            <column>[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:country:nk]</column>
+            <column>[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:created_at:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[Longitude (generated)]' field-type='quantitative' max='5359731.0769189354' min='-7237899.2762191659' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[Latitude (generated)]' field-type='quantitative' max='8643391.6212415956' min='2830484.9024138707' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='color' data-class='subtotal' value='#a0cbe8' />
+            <format attr='background-color' scope='rows' value='#f0f7fa' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[usr:Calculation_1010213718832005121:qk]' palette='blue_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#f2f9f9' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-pattern-only' scope='rows' value='dotted' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[usr:Calculation_1010213718832005121:qk]' />
+              <lod column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:country:nk]' />
+              <geometry column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[Geometry (generated)]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>País:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:country:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Valor promedio de préstamos:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0xpbq510k7s5ol10msf4z1wkj6si].[usr:Calculation_1010213718832005121:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.0xpbq510k7s5ol10msf4z1wkj6si].[Latitude (generated)]</rows>
+        <cols>[federated.0xpbq510k7s5ol10msf4z1wkj6si].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{DA2C5E42-5345-4A95-8EC4-7D4160302FE6}' />
+    </worksheet>
+    <worksheet name='Reset'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Operaciones financiación compras 2015 Europa' name='federated.0xpbq510k7s5ol10msf4z1wkj6si' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xpbq510k7s5ol10msf4z1wkj6si'>
+            <column caption='Reset Filters' datatype='string' name='[Calculation_714946469347840002]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&apos;Reset Filters&apos;' />
+            </column>
+            <column-instance column='[Calculation_714946469347840002]' derivation='None' name='[none:Calculation_714946469347840002:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='44' />
+            <format attr='width' value='105' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#c0c0c0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:Calculation_714946469347840002:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F8BF4156-AF75-4140-B1BE-247397D15508}' />
+    </worksheet>
+    <worksheet name='TablaKPIs'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontname='Century Gothic'>KPIs</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Operaciones financiación compras 2015 Europa' name='federated.0xpbq510k7s5ol10msf4z1wkj6si' />
+            <datasource caption='Parámetros' name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Valor prestamos mínimo' datatype='integer' name='[Parámetro 1]' param-domain-type='any' role='measure' type='quantitative' value='0'>
+              <calculation class='tableau' formula='0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0xpbq510k7s5ol10msf4z1wkj6si'>
+            <column caption='Promedio' datatype='real' name='[Calculation_1010213718832005121]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([amount])' />
+            </column>
+            <column caption='Total comercios' datatype='integer' name='[Calculation_1010213718835675138]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([name])' />
+            </column>
+            <column caption='Máximo' datatype='real' name='[Calculation_1010213718836334595]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='MAX([amount])' />
+            </column>
+            <column caption='Mínimo' datatype='real' name='[Calculation_1010213718839357444]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='MIN([amount])' />
+            </column>
+            <column caption='Valor acumulado' datatype='real' name='[Calculation_1010213718839742469]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RUNNING_SUM(SUM([amount]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Promedio total' datatype='real' name='[Calculation_1010213718847864839]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED : [Calculation_1010213718832005121]}' />
+            </column>
+            <column caption='Total devoluciones' datatype='integer' name='[Calculation_1010213718849757192]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([order_id (refunds)])' />
+            </column>
+            <column caption='Límite mínimo préstamo' datatype='boolean' name='[Calculation_1010213718855258121]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[amount]&gt;[Parameters].[Parámetro 1]' />
+            </column>
+            <column caption='Amount' datatype='real' name='[amount]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Created At' datatype='datetime' default-format='*d&quot; de &quot;mmmm&quot; de &quot;yyyy' name='[created_at]' role='dimension' type='ordinal' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1010213718855258121]' derivation='None' name='[none:Calculation_1010213718855258121:nk]' pivot='key' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[created_at]' derivation='None' name='[none:created_at:qk]' pivot='key' type='quantitative' />
+            <column caption='Order Id (Refunds)' datatype='string' name='[order_id (refunds)]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1010213718847864839]' derivation='Sum' name='[sum:Calculation_1010213718847864839:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1010213718832005121]' derivation='User' name='[usr:Calculation_1010213718832005121:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1010213718835675138]' derivation='User' name='[usr:Calculation_1010213718835675138:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1010213718836334595]' derivation='User' name='[usr:Calculation_1010213718836334595:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1010213718839357444]' derivation='User' name='[usr:Calculation_1010213718839357444:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1010213718839742469]' derivation='User' name='[usr:Calculation_1010213718839742469:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+            <column-instance column='[Calculation_1010213718849757192]' derivation='User' name='[usr:Calculation_1010213718849757192:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0xpbq510k7s5ol10msf4z1wkj6si].[usr:Calculation_1010213718836334595:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0xpbq510k7s5ol10msf4z1wkj6si].[usr:Calculation_1010213718839357444:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0xpbq510k7s5ol10msf4z1wkj6si].[usr:Calculation_1010213718832005121:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0xpbq510k7s5ol10msf4z1wkj6si].[sum:Calculation_1010213718847864839:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0xpbq510k7s5ol10msf4z1wkj6si].[usr:Calculation_1010213718835675138:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0xpbq510k7s5ol10msf4z1wkj6si].[usr:Calculation_1010213718849757192:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0xpbq510k7s5ol10msf4z1wkj6si].[usr:Calculation_1010213718839742469:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:Calculation_1010213718855258121:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Calculation_1010213718855258121:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:country:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:created_at:qk]' filter-group='5' included-values='all' />
+          <slices>
+            <column>[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:Calculation_1010213718855258121:nk]</column>
+            <column>[federated.0xpbq510k7s5ol10msf4z1wkj6si].[:Measure Names]</column>
+            <column>[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:country:nk]</column>
+            <column>[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:created_at:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[:Measure Names]' value='151' />
+            <format attr='width' value='99' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='16' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[Multiple Values]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Century Gothic' fontsize='15'>&lt;</run>
+                <run bold='true' fontname='Century Gothic' fontsize='15'>[federated.0xpbq510k7s5ol10msf4z1wkj6si].[Multiple Values]</run>
+                <run bold='true' fontname='Century Gothic' fontsize='15'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='wrap' value='off' />
+                <format attr='vertical-align' value='center' />
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xpbq510k7s5ol10msf4z1wkj6si].[:Measure Names]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{6401835F-30DB-41BA-B760-CCA7134526B3}' />
+    </worksheet>
+    <worksheet name='areas'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Century Gothic'>Valor acumulado de ventas</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Operaciones financiación compras 2015 Europa' name='federated.0xpbq510k7s5ol10msf4z1wkj6si' />
+            <datasource caption='Parámetros' name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Valor prestamos mínimo' datatype='integer' name='[Parámetro 1]' param-domain-type='any' role='measure' type='quantitative' value='0'>
+              <calculation class='tableau' formula='0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0xpbq510k7s5ol10msf4z1wkj6si'>
+            <column caption='Valor acumulado' datatype='real' name='[Calculation_1010213718839742469]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RUNNING_SUM(SUM([amount]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Límite mínimo préstamo' datatype='boolean' name='[Calculation_1010213718855258121]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[amount]&gt;[Parameters].[Parámetro 1]' />
+            </column>
+            <column caption='Amount' datatype='real' name='[amount]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Created At' datatype='datetime' default-format='*d&quot; de &quot;mmmm&quot; de &quot;yyyy' name='[created_at]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1010213718855258121]' derivation='None' name='[none:Calculation_1010213718855258121:nk]' pivot='key' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[created_at]' derivation='None' name='[none:created_at:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[created_at]' derivation='Day-Trunc' name='[tdy:created_at:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1010213718839742469]' derivation='User' name='[usr:Calculation_1010213718839742469:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:Calculation_1010213718855258121:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Calculation_1010213718855258121:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:country:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:created_at:qk]' filter-group='5' included-values='all' />
+          <slices>
+            <column>[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:Calculation_1010213718855258121:nk]</column>
+            <column>[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:country:nk]</column>
+            <column>[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:created_at:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[tdy:created_at:qk]' field-type='quantitative' major-origin='#2015-10-08 12:00:00#' major-spacing='15.0' major-units='days' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[tdy:created_at:qk]' scope='cols' value='' />
+            <format attr='title' class='0' field='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[usr:Calculation_1010213718839742469:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' value='#f0f7fa' />
+            <format attr='background-color' scope='rows' value='#f0f7fa' />
+            <format attr='background-color' field='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[tdy:created_at:qk]' value='#f0f7fa' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[tdy:created_at:qk]' value='*dd&quot;  &quot;mmm' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#b4b4b4' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#e6e6e6' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:created_at:qk]' value='Rango de fechas ' />
+            <format attr='title' field='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:country:nk]' value='País&#10;' />
+            <format attr='background-color' value='#f2f9f9' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:country:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878' fontname='Century Gothic'>País:&#9;</run>
+                <run bold='true' fontname='Century Gothic'><![CDATA[<[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:country:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Century Gothic'>Día:&#9;</run>
+                <run bold='true' fontname='Century Gothic'><![CDATA[<[federated.0xpbq510k7s5ol10msf4z1wkj6si].[tdy:created_at:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Century Gothic'>Valor de préstamos acumulado:&#9;</run>
+                <run bold='true' fontname='Century Gothic'><![CDATA[<[federated.0xpbq510k7s5ol10msf4z1wkj6si].[usr:Calculation_1010213718839742469:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.0xpbq510k7s5ol10msf4z1wkj6si].[usr:Calculation_1010213718839742469:qk]</rows>
+        <cols>[federated.0xpbq510k7s5ol10msf4z1wkj6si].[tdy:created_at:qk]</cols>
+      </table>
+      <simple-id uuid='{5CC1EACD-79E5-4206-834B-D754CB40757B}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='AnalisisVentasCustom'>
+      <style>
+        <style-rule element='parameter-ctrl'>
+          <format attr='background-color' value='#f0f7fa' />
+        </style-rule>
+      </style>
+      <size maxheight='1000' maxwidth='1400' minheight='1000' minwidth='1400' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Parámetros' name='Parameters' />
+        <datasource caption='Operaciones financiación compras 2015 Europa' name='federated.0xpbq510k7s5ol10msf4z1wkj6si' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Valor prestamos mínimo' datatype='integer' name='[Parámetro 1]' param-domain-type='any' role='measure' type='quantitative' value='0'>
+          <calculation class='tableau' formula='0' />
+        </column>
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.0xpbq510k7s5ol10msf4z1wkj6si'>
+        <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+        <column caption='Created At' datatype='datetime' default-format='*d&quot; de &quot;mmmm&quot; de &quot;yyyy' name='[created_at]' role='dimension' type='ordinal' />
+        <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+        <column-instance column='[created_at]' derivation='None' name='[none:created_at:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='6700' id='32' param='horz' type-v2='layout-flow' w='98858' x='571' y='800'>
+            <zone h='6700' id='11' type-v2='layout-basic' w='98858' x='571' y='800'>
+              <zone forceUpdate='true' h='6700' id='7' type-v2='text' w='98858' x='571' y='800'>
+                <formatted-text>
+                  <run fontalignment='1' fontname='Century Gothic' fontsize='24'>Análisis de Ventas 2015</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='7200' id='34' type-v2='dashboard-object' w='98858' x='571' y='92000'>
+            <button _.fcp.DashboardExportButton.true...button-click-action-metadata='pdf' action='' button-type='text'>
+              <_.fcp.DashboardExportButton.true...export-button-action>tabdoc:abstract-dashboard-button-export-wrapper dashboard-button-export-type=&quot;pdf&quot; dashboarddoc-id=&quot;{3B803C2B-3BB0-4976-B39D-3BA7B19EDBB6}&quot;</_.fcp.DashboardExportButton.true...export-button-action>
+              <button-visual-state>
+                <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+                <format attr='background-color' value='#75a1c7' />
+              </button-visual-state>
+            </button>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='84500' id='40' type-v2='empty' w='98858' x='571' y='7500'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+              <format attr='background-color' value='#bbdbf0' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='18000' id='15' name='Desviación' show-title='false' w='41643' x='1643' y='72900' />
+        <zone h='6300' id='16' name='Leyenda Desviacion' show-title='false' w='25286' x='2071' y='65700' />
+        <zone h='43700' id='36' param='horz' type-v2='layout-flow' w='49929' x='47857' y='9100'>
+          <zone fixed-size='301' h='43700' id='42' is-fixed='true' param='vert' type-v2='layout-flow' w='22071' x='47857' y='9100'>
+            <zone fixed-size='267' h='27500' id='19' is-fixed='true' name='TablaKPIs' w='21499' x='48143' y='9500'>
+              <layout-cache fixed-size-w='241' type-h='fixed' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='15400' id='41' is-centered='0' is-scaled='1' param='Image/34-349751_insight-icon-png-transparent-png.png' type-v2='bitmap' w='21499' x='48143' y='37000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='43700' id='35' param='vert' type-v2='layout-flow' w='27858' x='69928' y='9100'>
+            <zone custom-title='true' h='5600' id='33' mode='type_in' param='[Parameters].[Parámetro 1]' type-v2='paramctrl' w='27286' x='70214' y='9500'>
+              <formatted-text>
+                <run fontcolor='#555555' fontname='Century Gothic'>Valor prestamos mínimo</run>
+              </formatted-text>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='6100' id='23' mode='dropdown' name='areas' param='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:country:nk]' type-v2='filter' values='database' w='27286' x='70214' y='15100'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='7300' id='26' name='areas' param='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:created_at:qk]' type-v2='filter' values='database' w='27286' x='70214' y='21200'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='5200' id='20' name='Reset' show-title='false' w='27286' x='70214' y='28500'>
+              <layout-cache fixed-size-w='105' type-h='fixed' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='18700' id='39' is-scaled='1' param='Image/20943645.jpg' type-v2='bitmap' w='27286' x='70214' y='33700'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+        <zone h='52300' id='14' name='areas' w='42500' x='1571' y='9000'>
+          <layout-cache minwidth='144' type-h='fixed' type-w='scalable' />
+        </zone>
+        <zone h='37000' id='17' name='Mapa' w='50071' x='47857' y='53500'>
+          <layout-cache minwidth='201' type-h='fixed' type-w='scalable' />
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout name='Phone'>
+          <size maxheight='1800' minheight='1800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='38' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='99112' id='37' param='vert' type-v2='layout-flow' w='95734' x='2133' y='444'>
+                <zone forceUpdate='true' h='5888' id='7' type-v2='text' w='95734' x='2133' y='444'>
+                  <formatted-text>
+                    <run fontalignment='1' fontname='Century Gothic' fontsize='24'>Análisis de Ventas 2015</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3388' id='23' mode='dropdown' name='areas' param='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:country:nk]' type-v2='filter' values='database' w='95734' x='2133' y='6332'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4055' id='26' name='areas' param='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:created_at:qk]' type-v2='filter' values='database' w='95734' x='2133' y='9720'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone custom-title='true' h='3111' id='33' mode='type_in' param='[Parameters].[Parámetro 1]' type-v2='paramctrl' w='95734' x='2133' y='13775'>
+                  <formatted-text>
+                    <run fontcolor='#555555' fontname='Century Gothic'>Valor prestamos mínimo</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='44' h='2888' id='20' is-fixed='true' name='Reset' show-title='false' w='95734' x='2133' y='16886'>
+                  <layout-cache fixed-size-w='106' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='16000' id='14' is-fixed='true' name='areas' w='95734' x='2133' y='19774'>
+                  <layout-cache minheight='207' minwidth='144' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#75a1c7' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='5' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='16000' id='19' is-fixed='true' name='TablaKPIs' w='95734' x='2133' y='35774'>
+                  <layout-cache fixed-size-w='242' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='16000' id='17' is-fixed='true' name='Mapa' w='95734' x='2133' y='51774'>
+                  <layout-cache minheight='247' minwidth='201' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='63' h='3944' id='16' is-fixed='true' name='Leyenda Desviacion' show-title='false' w='95734' x='2133' y='67774'>
+                  <layout-cache type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='180' h='10444' id='15' is-fixed='true' name='Desviación' show-title='false' w='95734' x='2133' y='71718'>
+                  <layout-cache type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='2889' id='34' type-v2='dashboard-object' w='95734' x='2133' y='82162'>
+                  <button _.fcp.DashboardExportButton.true...button-click-action-metadata='pdf' action='' button-type='text'>
+                    <_.fcp.DashboardExportButton.true...export-button-action>tabdoc:abstract-dashboard-button-export-wrapper dashboard-button-export-type=&quot;pdf&quot; dashboarddoc-id=&quot;{3B803C2B-3BB0-4976-B39D-3BA7B19EDBB6}&quot;</_.fcp.DashboardExportButton.true...export-button-action>
+                    <button-visual-state>
+                      <button-caption-font-style fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12' />
+                      <format attr='background-color' value='#75a1c7' />
+                    </button-visual-state>
+                  </button>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{3B803C2B-3BB0-4976-B39D-3BA7B19EDBB6}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='63'>
+    <window class='worksheet' name='CamposCalculados' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='288'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3A356781-20A8-4329-A566-17A2FA6FA8E7}' />
+    </window>
+    <window class='worksheet' name='Reset' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FF326D4D-8D1C-42EB-8A60-3AE2F7C2DC52}' />
+    </window>
+    <window class='worksheet' name='TablaKPIs' tab-color='#4f779a'>
+      <cards>
+        <edge name='left'>
+          <strip size='252'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='1' />
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{FC607F58-7F3A-4B9F-B7E5-54EDF9CF41FE}' />
+    </window>
+    <window class='worksheet' name='Mapa' tab-color='#4f779a'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='172'>
+            <card pane-specification-id='0' param='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[usr:Calculation_1010213718832005121:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3FD8CC36-71A2-4D11-9B0C-ADDB4CBEEB76}' />
+    </window>
+    <window class='worksheet' name='areas' tab-color='#4f779a'>
+      <cards>
+        <edge name='left'>
+          <strip size='257'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='0' param='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[none:country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C752801F-F3D9-4E2D-AEC5-7C80EBD99BD1}' />
+    </window>
+    <window class='worksheet' name='Desviación' tab-color='#4f779a'>
+      <cards>
+        <edge name='left'>
+          <strip size='248'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='172'>
+            <card pane-specification-id='0' param='[federated.0xpbq510k7s5ol10msf4z1wkj6si].[usr:Calculation_935904325333782528:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9930C57E-2093-4D60-898E-40D70A87A3E5}' />
+    </window>
+    <window class='worksheet' name='Leyenda Desviacion' tab-color='#17927d'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='172'>
+            <card pane-specification-id='0' param='[Clipboard_20231202T121746].[none:Leyenda:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F0F9594F-731B-4B14-A1C6-5B7F6990DB5E}' />
+    </window>
+    <window class='dashboard' maximized='true' name='AnalisisVentasCustom'>
+      <viewpoints>
+        <viewpoint name='Desviación' />
+        <viewpoint name='Leyenda Desviacion' />
+        <viewpoint name='Mapa'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='Reset' />
+        <viewpoint name='TablaKPIs'>
+          <floating-toolbar-visibility value='1' />
+          <default-map-tool-selection tool='4' />
+        </viewpoint>
+        <viewpoint name='areas'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{DA50A99C-1A78-4F9D-9700-860BFA680F11}' />
+    </window>
+  </windows>
+</workbook>
